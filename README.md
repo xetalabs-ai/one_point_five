@@ -1,6 +1,10 @@
 # one_point_five
-/// docker pull mintplexlabs/anythingllm
-***
+## Pull in the latest image from docker. Supports both amd64 and arm64 CPU architectures.
+```bash
+docker pull mintplexlabs/anythingllm
+```
+Linux/MacOs(commands)
+```bash
 export STORAGE_LOCATION=$HOME/anythingllm && \
 mkdir -p $STORAGE_LOCATION && \
 touch "$STORAGE_LOCATION/.env" && \
@@ -10,5 +14,6 @@ docker run -d -p 3001:3001 \
 -v ${STORAGE_LOCATION}/.env:/app/server/.env \
 -e STORAGE_DIR="/app/server/storage" \
 mintplexlabs/anythingllm
-***
-///
+```
+**your llm is set now**
+
